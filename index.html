@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #7f9eb2;">
+  <a class="navbar-brand" href="#" style="font-weight: bold;"> User liST</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link home-page active" style="font-weight: bold;" href="#">Home <span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link favorite-page" style="font-weight: bold;" href="#">Favorite</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0" id="search">
+      <select class="btn btn-secondary mr-2" id="search-select">
+        <option value="name">name</option>
+        <option value="region">region</option>
+      </select>
+      <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row justify-content-between headbar mb-2">
+    <div class="col-9 ">
+      <div class="btn-group gender-btn" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-info all"><i class="fas fa-venus-mars all"></i> All</button>
+        <button type="button" class="btn btn-info male"><i class="fas fa-mars male"></i> Male</button>
+        <button type="button" class="btn btn-info female"><i class="fas fa-venus female"></i> Female</button>
+      </div>
+    </div>
+
+    <div id="icon" class="col-3 text-right">
+      <i class="fa fa-th fa-2x" aria-hidden="true" title="Card mode"></i>
+      <i class="fa fa-bars fa-2x" aria-hidden="true" title="List mode"></i>
+    </div>
+
+  </div>
+
+  <!--     <div class="row justify-content-end" id="icon">
+      <i class="fa fa-th fa-2x" aria-hidden="true" title="Card mode"></i>
+      <i class="fa fa-bars fa-2x" aria-hidden="true" title="List mode"></i>
+    </div> -->
+
+  <!--   ALL CARD -->
+  <div class="row justify-content-around" id="card-list"></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"> </div>
+        <div class="modal-footer">
+          <span id="heart"></span>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   Pagination  -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" id="pagination">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+    </ul>
+  </nav>
+</div>
